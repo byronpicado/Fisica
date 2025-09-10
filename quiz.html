@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz de Física ⚡</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">⚡ Aprende Física Fácil</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="index.html#recursos">Recursos</a></li>
+    </ul>
+  </nav>
+
+  <div class="app">
+    <div class="card" role="application" aria-labelledby="app-title">
+      <div class="header">
+        <div class="logo">⚡</div>
+        <div>
+          <h1 id="app-title">Quiz Interactivo de Física</h1>
+          <p class="lead">Responde las preguntas y recibe explicaciones detalladas al instante. ¡Pon a prueba tu conocimiento! 🎉</p>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <!-- Pregunta 1 -->
+        <div class="page active" data-page="1">
+          <h2>Movimiento</h2>
+          <p>Un auto recorre 100 km en 2 horas. ¿Cuál es su velocidad?</p>
+          <div class="options">
+            <button class="option" data-correct="false">25 km/h</button>
+            <button class="option" data-correct="true">50 km/h</button>
+            <button class="option" data-correct="false">200 km/h</button>
+          </div>
+          <p class="feedback"></p>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="page" data-page="2">
+          <h2>Energía</h2>
+          <p>Si una pelota de 2 kg va a 3 m/s, ¿cuál es su energía cinética?</p>
+          <div class="options">
+            <button class="option" data-correct="false">3 J</button>
+            <button class="option" data-correct="false">9 J</button>
+            <button class="option" data-correct="true">18 J</button>
+          </div>
+          <p class="feedback"></p>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="page" data-page="3">
+          <h2>Electricidad</h2>
+          <p>Un circuito tiene 10 V y 5 Ω, ¿cuánta corriente circula?</p>
+          <div class="options">
+            <button class="option" data-correct="false">0.5 A</button>
+            <button class="option" data-correct="true">2 A</button>
+            <button class="option" data-correct="false">50 A</button>
+          </div>
+          <p class="feedback"></p>
+        </div>
+
+        <!-- Pantalla final -->
+        <div class="page" data-page="final">
+          <h2>Resultado</h2>
+          <p class="final-msg">¡Excelente trabajo 🚀! Hoy reforzaste los conceptos básicos de Física.</p>
+          <p id="scoreText"></p>
+
+          <div class="sabias-que">
+            <h3>¿Sabías que…? 🤓</h3>
+            <ul>
+              <li>La luz tarda solo 8 minutos en viajar desde el Sol hasta la Tierra.</li>
+              <li>Un electrón puede comportarse como partícula y como onda al mismo tiempo.</li>
+              <li>La energía no se destruye, solo se transforma (Principio de conservación).</li>
+            </ul>
+          </div>
+            
+
+          <div class="controls">
+            <button class="btn ghost" id="restart">Volver a intentar</button>
+            <a href="index.html" class="btn">Regresar al inicio</a>
+          </div>
+        </div>
+
+        <div class="progress"><i id="progBar"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
